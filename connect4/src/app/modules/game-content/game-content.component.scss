@@ -1,0 +1,33 @@
+@import '../../breakpoints/breakpoints.scss';
+
+    $player1DiskColor: #ce1010;
+    $player2DiskColor:#eeea0c;
+
+    .game-content__container {
+        max-height: 140px;
+        font-size: 24px;
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .game-content__player-name-section,
+    .game-content__new-game-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .game-content__player-name-label {
+        font-weight: bold;
+        margin: 20px;
+
+        &.game-content__player-name-label--player1-playing {
+            color: $player1DiskColor;
+        }
+
+        &.game-content__player-name-label--player2-playing {
+            color: $player2DiskColor;
+        }
+    }

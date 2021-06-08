@@ -1,0 +1,32 @@
+@import '../../breakpoints/breakpoints.scss';
+
+$primary: #c2185b; 
+$background: #ce1010;
+$foreground: #fefe10;
+$player1DiskColor:white;
+$player2DiskColor:black;
+
+    .disk__item {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 50%;
+        background-color: $background;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.board__disk-item--filled-by-p1 {
+            background-color: $player1DiskColor;
+            animation: fall-down 0.5s 1;
+            animation-fill-mode: forwards;
+        }
+
+        &.board__disk-item--filled-by-p2 {
+            background-color: $player2DiskColor;
+            animation: fall-down 0.3s 1;
+            animation-fill-mode: forwards;
+        }
+
+   
+    }

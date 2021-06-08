@@ -1,0 +1,14 @@
+  <mat-toolbar color="primary">
+    
+    <span i18n="@@appName">Connect 4 with Angular</span>
+    <span class="toolbar__spacer"></span>
+    <button mat-button [matMenuTriggerFor]="menu">
+      <mat-icon>translate</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <a href="fr" mat-menu-item>English</a>
+      <a href="en" mat-menu-item>Français</a>
+      <a href="ku" mat-menu-item>Kurdi</a>
+    </mat-menu>
+    
+  </mat-toolbar>
